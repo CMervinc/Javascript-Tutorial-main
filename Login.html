@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Longin for Weather</title>
+        <script>
+            function myFunction()
+            {
+            var un =document.forms["myForm"]["uname"].value;
+            var pw = document.forms["myForm"]["pass"].value;
+                if(un=="Mervin" && pw=="123")
+                {
+                    window.location.href="index.html";
+                }
+                else
+                {
+                    alert("Invalid User Name And Password");
+                }
+
+            }
+
+        </script>
+        <style>
+            body 
+            {
+                background: #ffcc00;
+            }
+            .div1
+            {
+                width:350px;
+                margin:auto;
+                margin:10 0 0 450px;
+                overflow:hidden;
+                padding: 75px;
+                background:#003300;
+                
+            }
+            h2
+            {
+                text-align: center;
+                padding: 10px;
+                color: #003300;
+            }
+            label
+            {
+                color: white;
+                padding-left:10px;
+
+
+            }
+            .inputText
+            {
+                width:300px;
+                height:30px;
+                border:none;
+                border:radius 2px;
+                padding: left 8px;
+                
+            }
+            #logButton
+            {
+                width:300px;
+                height:30px;
+                border:none;
+                border-radius:10px;
+                padding-left:7px;
+                color: black;
+                font-size: 16px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h2>Longin </h2>
+        <div class="div1">
+            <form name="myForm" method="post">
+                <label>User name</label>
+                <input type="text" name="uname" class="inputText" placeholder="User Name">
+                <br><br>
+                <label>Password</label>
+                <input type="password" name="pass" class="inputText" placeholder="Password">
+                <br><br>
+                <input type="button" name="log" id="logButton" value="Login" onclick="myFunction()">
+                <br><br>
+
+        </div> 
+        </body>        
+</html>
